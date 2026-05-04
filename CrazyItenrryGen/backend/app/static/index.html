@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crazy Itinerary Generator</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="hero-panel">
+      <div class="hero-header">
+        <div class="hero-copy">
+          <span class="eyebrow">serious madness, stunning plans</span>
+          <h1>Crazy Travel Itinerary Generator</h1>
+          <p>Generate a wild local itinerary in seconds with sample data and a dramatic travel look. No external keys required.</p>
+        </div>
+        <a href="/login" class="login-link">Log in</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <strong>15+</strong>
+          <span>Surprising stops</span>
+        </div>
+        <div class="stat-card">
+          <strong>95%</strong>
+          <span>Chaos score boost</span>
+        </div>
+        <div class="stat-card">
+          <strong>Instant</strong>
+          <span>Local sample view</span>
+        </div>
+      </div>
+    </div>
+
+    <main class="panel">
+      <section class="form-block glass-card">
+        <div class="section-heading">
+          <h2>Craft your chaotic journey</h2>
+          <p>Enter your destination and preferences, then watch the itinerary materialize.</p>
+        </div>
+
+        <form id="plan-form" class="form-grid">
+          <label>
+            Destination
+            <input id="city" value="Tokyo" />
+          </label>
+          <label>
+            Days
+            <input id="days" type="number" min="1" value="5" />
+          </label>
+          <label>
+            Chaos Level
+            <input id="chaos" type="number" min="1" max="10" value="7" />
+          </label>
+          <label class="full-width">
+            Interests
+            <input id="interests" value="weird attractions, nightlife, local food" />
+          </label>
+          <button type="submit">Generate Sample Itinerary</button>
+        </form>
+      </section>
+
+      <section id="result" class="result glass-card hidden">
+        <div class="result-header">
+          <div>
+            <span class="tag">Sample itinerary</span>
+            <h2 id="result-title"></h2>
+          </div>
+          <p id="result-notes"></p>
+        </div>
+        <div id="items" class="items-grid"></div>
+      </section>
+
+      <p id="error" class="error"></p>
+    </main>
+  </div>
+
+  <div class="background-glow glow-1"></div>
+  <div class="background-glow glow-2"></div>
+  <div class="background-glow glow-3"></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

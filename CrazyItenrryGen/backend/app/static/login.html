@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Crazy Itinerary Generator</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="page-shell login-shell">
+    <div class="login-card glass-card">
+      <span class="eyebrow">Member access</span>
+      <h1>Welcome back.</h1>
+      <p>Sign in to save your itinerary preferences and resume your chaotic travel planning experience.</p>
+
+      <form id="login-form" class="login-form">
+        <label>
+          Email address
+          <input id="email" type="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          Password
+          <input id="password" type="password" placeholder="••••••••" required />
+        </label>
+        <button type="submit">Sign in</button>
+      </form>
+
+      <p class="login-footnote">No real authentication yet — this page simulates login and redirects to the itinerary builder.</p>
+    </div>
+  </div>
+  <script src="/static/login.js"></script>
+</body>
+</html>

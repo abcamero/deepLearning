@@ -1,0 +1,19 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+.venv/
+
+# Node artifacts
+node_modules/
+.next/
+out/
+
+# Database
+*.db
+
+# OS
+.DS_Store
